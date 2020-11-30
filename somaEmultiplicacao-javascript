@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script type="text/javascript" src="script2.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <input type="text" name="campo1" id="campo1">
+  <input type="text" name="campo2" id="campo2">
+  <button onclick="somar()">Somar</button>
+  <button onclick="multip()">Multiplicar</button>
+
+  <div id="resp"></div>
+  
+</body>
+</html>
+
+<script>
+  function somar(){
+    var campo1 = parseInt(document.getElementById("campo1").value);
+    var campo2 = parseInt(document.getElementById("campo2").value);
+
+    var result = document.getElementById("resp");
+    soma = campo1+campo2;
+    result.innerHTML = "<strong>"+soma+"</strong>";
+  }
+
+  function multip(){
+    var campo1 = parseInt(document.getElementById("campo1").value);
+    var campo2 = parseInt(document.getElementById("campo2").value);
+
+    var result = document.getElementById("resp");
+    multip = campo1*campo2;
+    result.innerHTML = "<strong>"+multip+"</strong>";
+  }
+</script>
